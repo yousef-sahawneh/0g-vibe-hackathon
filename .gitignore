@@ -1,0 +1,11 @@
+  node_modules/
+  .next/
+  packages/contracts/artifacts/
+  packages/contracts/cache/
+  packages/contracts/typechain-types/
+  packages/contracts/.deployed-address
+  packages/web/.env.local
+  packages/web/tsconfig.tsbuildinfo
+  EOF
+git add .
+  git commit -m "Initial commit: 0G Notary app"

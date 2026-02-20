@@ -1,0 +1,139 @@
+.card {
+  border: 1px solid var(--success);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(0, 200, 150, 0.08);
+  border-bottom: 1px solid rgba(0, 200, 150, 0.2);
+}
+
+.badge {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.chain {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.rowLabel {
+  font-size: 0.75rem;
+  color: var(--muted);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.rowValue {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.hashRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+
+.hashLabel {
+  font-size: 0.72rem;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.hashValue {
+  font-family: monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copyBtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.copyBtn:hover { border-color: var(--accent); color: var(--accent); }
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.actionLink {
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: auto;
+}
+.actionLink:hover { text-decoration: underline; }
+
+.actionBtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.actionBtn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.actionBtn:disabled { opacity: 0.5; cursor: not-allowed; }

@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/yousef/ethdenver-2026/0g-vibe-hackathon/packages/contracts/contracts/MyContract.sol": {
+      "lastModificationDate": 1771624315808,
+      "contentHash": "9eb2f2812ee71bd16bbf71cf423e4b6f",
+      "sourceName": "contracts/MyContract.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "MyContract"
+      ]
+    },
+    "/Users/yousef/ethdenver-2026/0g-vibe-hackathon/packages/contracts/contracts/Notary.sol": {
+      "lastModificationDate": 1771624874806,
+      "contentHash": "e0834b461d07748fc9ab68147eb845cb",
+      "sourceName": "contracts/Notary.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "Notary"
+      ]
+    }
+  }
+}

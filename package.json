@@ -1,0 +1,16 @@
+{
+  "name": "0g-vibe-hackathon",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/web",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/web",
+    "build": "npm run build --workspace=packages/web",
+    "postinstall": "node scripts/patch-0g-sdk.js",
+    "deploy": "npm run compile --workspace=packages/contracts && npm run deploy --workspace=packages/contracts",
+    "verify": "npm run verify --workspace=packages/contracts"
+  }
+}

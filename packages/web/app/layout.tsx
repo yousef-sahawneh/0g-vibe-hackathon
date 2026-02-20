@@ -1,0 +1,25 @@
+import type { Metadata } from "next";
+import { Geist } from "next/font/google";
+import { Providers } from "./providers";
+import { Navbar } from "@/components/Navbar";
+import "./globals.css";
+
+const geist = Geist({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "0G Notary — Decentralized Document Notarization",
+  description: "Permanent proof of document existence, powered by 0G decentralized storage and on-chain timestamping.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={geist.className}>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
+      </body>
+    </html>
+  );
+}
